@@ -12,7 +12,6 @@ public class Login {
                 {"adminJago@gmail.com", "kasirJago123", "admin"},
         };
 
-        System.out.println("Halaman Login Jago Service POS");
 
         System.out.print("email : ");
         String email = terminalInput.nextLine();
@@ -37,7 +36,9 @@ public class Login {
                 cashierDashboard cashier = new cashierDashboard();
                 cashier.cashier();
             } else if ("admin".equals(role)) {
-                System.out.println("Admin");
+//                System.out.println("Admin");
+                adminDashboard admin = new adminDashboard();
+                admin.admin();
             }
         }
     }
